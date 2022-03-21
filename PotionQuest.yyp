@@ -1,23 +1,30 @@
 {
   "resources": [
+    {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":4,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"order":1,},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":5,},
     {"id":{"name":"fnt_mesg","path":"fonts/fnt_mesg/fnt_mesg.yy",},"order":0,},
     {"id":{"name":"spr_house","path":"sprites/spr_house/spr_house.yy",},"order":0,},
+    {"id":{"name":"obj_inventory_menu","path":"objects/obj_inventory_menu/obj_inventory_menu.yy",},"order":7,},
     {"id":{"name":"tile_home","path":"tilesets/tile_home/tile_home.yy",},"order":0,},
     {"id":{"name":"obj_house_main","path":"objects/obj_house_main/obj_house_main.yy",},"order":2,},
     {"id":{"name":"obj_house","path":"objects/obj_house/obj_house.yy",},"order":3,},
     {"id":{"name":"spr_tree_1","path":"sprites/spr_tree_1/spr_tree_1.yy",},"order":2,},
+    {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
+    {"id":{"name":"obj_paused_menu","path":"objects/obj_paused_menu/obj_paused_menu.yy",},"order":4,},
+    {"id":{"name":"spr_inventory_menu","path":"sprites/spr_inventory_menu/spr_inventory_menu.yy",},"order":5,},
     {"id":{"name":"spr_tile_home","path":"sprites/spr_tile_home/spr_tile_home.yy",},"order":3,},
     {"id":{"name":"spr_house_main","path":"sprites/spr_house_main/spr_house_main.yy",},"order":1,},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},"order":0,},
+    {"id":{"name":"obj_title_screen","path":"objects/obj_title_screen/obj_title_screen.yy",},"order":6,},
+    {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
     {"name":"Windows","path":"options/windows/options_windows.yy",},
     {"name":"operagx","path":"options/operagx/options_operagx.yy",},
-    {"name":"macOS","path":"options/mac/options_mac.yy",},
   ],
   "isDnDProject": false,
   "isEcma": false,
@@ -26,6 +33,7 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
@@ -52,7 +60,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.2.0.614",
+    "IDEVersion": "2022.2.1.618",
   },
   "resourceVersion": "1.5",
   "name": "PotionQuest",
