@@ -4,6 +4,15 @@ if(global.game_state == states.paused) {
 	// Draw screenshot
 	draw_sprite_ext(global.screen_shot, -1, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), 1, 1, 0, c_white, 1);
 	
+	// Draw darkened background
+	draw_sprite_ext(spr_dark_background, -1, camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), 1, 1, 0, c_white, 0.5);
+	
+	// Draw paused text
+	draw_set_color(c_red);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_text(camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2, camera_get_view_y(view_camera[0]) + 50, "PAUSED");
+	
 	// Calculate width and height of menu
 	var new_width = 0;
 	for(var i = 0; i < op_length; i++) {
