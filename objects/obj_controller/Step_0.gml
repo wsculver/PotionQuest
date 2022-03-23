@@ -24,13 +24,15 @@ if(keyboard_check_pressed(vk_escape)) {
 	}
 }
 	
-if(keyboard_check_pressed(ord("E"))) {
-	// Show inventory
-	if(global.game_state == states.playing) {
-		global.game_state = states.inventory;	
-	}
-	// Hide inventory
-	else if(global.game_state == states.inventory) {
-		global.game_state = states.playing
+if(!global.in_minigame) {
+	if(keyboard_check_pressed(ord("E"))) {
+		// Show inventory
+		if(global.game_state == states.playing) {
+			global.game_state = states.inventory;	
+		}
+		// Hide inventory
+		else if(global.game_state == states.inventory) {
+			global.game_state = states.playing
+		}
 	}
 }
