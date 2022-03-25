@@ -1,3 +1,3 @@
 /// @description Player initialization
 
-spd = 3;
+spd = 10;
