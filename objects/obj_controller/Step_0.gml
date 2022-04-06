@@ -1,9 +1,14 @@
 /// @description Check events
-
+if (global.game_state == states.paused || global.game_state == states.title) {
+	alarm[0] = pausedDay;
+	alarm[1] = pausedGame;
+}
 if(keyboard_check_pressed(vk_escape)) {
 	// Pause
 	if(global.game_state == states.playing) {
 		global.game_state = states.paused;
+		pausedDay = alarm[0];
+		pausedGame = alarm[1];
 		if(!sprite_exists(global.screen_shot)){
 		    global.screen_shot = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, 0, 0, 0, 0);    
 		}
@@ -13,6 +18,8 @@ if(keyboard_check_pressed(vk_escape)) {
 	// Resume
 	else if(global.game_state == states.paused) {
 		global.game_state = states.playing;
+		alarm[0] = pausedDay;
+		alarm[1] = pausedGame;
 		if(sprite_exists(global.screen_shot)){
 			sprite_delete(global.screen_shot);
 		}
@@ -35,4 +42,18 @@ if(!global.in_minigame) {
 			global.game_state = states.playing
 		}
 	}
+}
+
+
+
+if(keyboard_check_pressed(ord("1"))) {
+	room_goto(rm_main);
+} else if(keyboard_check_pressed(ord("2"))) {
+	room_goto(rm_tundra);
+} else if(keyboard_check_pressed(ord("3"))) {
+	room_goto(rm_forest);
+} else if(keyboard_check_pressed(ord("4"))) {
+	room_goto(rm_ocean);
+} else if(keyboard_check_pressed(ord("5"))) {
+	room_goto(rm_desert);
 }
