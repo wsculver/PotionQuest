@@ -28,7 +28,8 @@ if(global.game_state == states.paused) {
 				break;
 			// Quit
 			case 1:
-				game_end();
+				updateSave();
+				alarm[0] = room_speed * 2;
 				break;
 		}
 	}
