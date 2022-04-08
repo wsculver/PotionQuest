@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_npc",
-    "path": "sprites/spr_npc/spr_npc.yy",
+    "name": "spr_npc_blacksmith",
+    "path": "sprites/spr_npc_blacksmith/spr_npc_blacksmith.yy",
   },
   "solid": false,
   "visible": true,

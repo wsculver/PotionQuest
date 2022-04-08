@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_npc",
-    "path": "sprites/spr_npc/spr_npc.yy",
+    "name": "spr_npc_farmer",
+    "path": "sprites/spr_npc_farmer/spr_npc_farmer.yy",
   },
   "solid": false,
   "visible": true,
