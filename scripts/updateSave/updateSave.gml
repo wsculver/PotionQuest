@@ -1,28 +1,34 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function updateSave(){
-	// POSSIBLE EXPANSION, MULTIPLE SAVEFILES
+	// POSSIBLE EXPANSION, MULTIPLE SAVEFILES - unlikely
 	
 	/** Save file needs:
 			Current Room
 			XY Coordinates
 			Items already in Inventory
 	**/
+	instance_activate_all();
 	player = instance_find(obj_player, 0);
 	
 	currRoom = biome.main;
-	if (room == "rm_tundra") {
+	if (room == rm_tundra) {
 		currRoom = biome.tundra;
+	} else if (room == rm_forest) {
+		currRoom = biome.forest;
+	} else if (room == rm_ocean) {
+		currRoom = biome.ocean;
+	} else if (room == rm_desert) {
+		currRoom = biome.desert;
 	}
-	// TODO: Expand to include other biomes
 	
 	
 	// TODO: Add inventory code
 	
-	// Not sure if this works or not
-	file = file_text_open_write("savefile.txt");
-	file_text_write_string(file,currRoom);
-	file_text_write_string(file,player.x);
-	file_text_write_string(file,player.y);
-	file_text_close(file);
+	
+	ini_open("savefile.ini");
+	ini_write_real("location", "Room", currRoom );
+	ini_write_real("location", "x", player.x );
+	ini_write_real("location", "y", player.y );
+	ini_close();
 }
