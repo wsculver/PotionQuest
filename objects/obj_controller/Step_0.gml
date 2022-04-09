@@ -1,4 +1,6 @@
 /// @description Check events
+global.dayTime = alarm[0];
+global.gameTime = alarm[1];
 if (global.game_state == states.paused || global.game_state == states.title) {
 	alarm[0] = pausedDay;
 	alarm[1] = pausedGame;
