@@ -27,7 +27,13 @@ if(keyboard_check_pressed(vk_escape)) {
 	}
 	// Hide inventory
 	else if(global.game_state == states.inventory) {
-		global.game_state = states.playing
+		global.game_state = states.playing;
+	}
+	// Exit riddle
+	else if(global.game_state == states.riddle) {
+		global.game_state = states.playing;
+		obj_riddle.riddle = "";
+		obj_riddle.answer = "";
 	}
 }
 	

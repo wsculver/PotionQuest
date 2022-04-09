@@ -35,26 +35,28 @@ if(global.game_state == states.playing) {
 		walking = false;
 	}
 
-	if(!walking) {
-		switch(direction_facing) {
-			case facing.up:
-				sprite_index = spr_player_idle_up;
-				break;
-			case facing.down:
-				sprite_index = spr_player_idle_down;
-				break;
-			case facing.left:
-				sprite_index = spr_player_idle_left;
-				break;
-			case facing.right:
-				sprite_index = spr_player_idle_right;
-				break;
-		}
-	}
-
 	// Center the camera
 	half_cam_width = camera_get_view_width(view_camera[0]) / 2;
 	half_cam_height = camera_get_view_height(view_camera[0]) / 2;
 
 	camera_set_view_pos(view_camera[0], x - half_cam_width, y - half_cam_height);
+} else {
+	walking = false;
+}
+
+if(!walking) {
+	switch(direction_facing) {
+		case facing.up:
+			sprite_index = spr_player_idle_up;
+			break;
+		case facing.down:
+			sprite_index = spr_player_idle_down;
+			break;
+		case facing.left:
+			sprite_index = spr_player_idle_left;
+			break;
+		case facing.right:
+			sprite_index = spr_player_idle_right;
+			break;
+	}
 }

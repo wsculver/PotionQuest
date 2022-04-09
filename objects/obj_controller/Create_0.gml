@@ -5,6 +5,7 @@ enum states {
 	playing,
 	paused,
 	inventory,
+	riddle,
 	gameover
 }
 

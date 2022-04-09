@@ -11,6 +11,7 @@ if(global.show_npc_textbox) {
 	// Draw text for current page
 	draw_set_font(fnt_menu);
 	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	draw_set_color(c_white);
 	draw_text_ext(x + text_border, y + text_border, text[current_page], text_space, width - (2 * text_border));	
 }
