@@ -1,4 +1,6 @@
 /// @description Check events
+global.dayTime = alarm[0];
+global.gameTime = alarm[1];
 if (global.game_state == states.paused || global.game_state == states.title) {
 	alarm[0] = pausedDay;
 	alarm[1] = pausedGame;
@@ -50,7 +52,15 @@ if(!global.in_minigame) {
 	}
 }
 
-
+if(keyboard_check_pressed(ord("P"))) {
+	updateSave();
+	/*global.game_state = states.paused;
+	if(!sprite_exists(global.screen_shot)){
+	    global.screen_shot = sprite_create_from_surface(application_surface, 0, 0, view_wport, view_hport, 0, 0, 0, 0);    
+	}
+	instance_deactivate_all(true);
+	instance_activate_object(obj_paused_menu);*/
+}
 
 if(keyboard_check_pressed(ord("1"))) {
 	room_goto(rm_main);
