@@ -30,5 +30,8 @@ function updateSave(){
 	ini_write_real("location", "Room", currRoom );
 	ini_write_real("location", "x", player.x );
 	ini_write_real("location", "y", player.y );
+	ini_write_real("gameTime", "Day", global.day);
+	ini_write_real("gameTime", "DayTime", global.dayTime);
+	ini_write_real("gameTime", "GameTime", global.gameTime);
 	ini_close();
 }
