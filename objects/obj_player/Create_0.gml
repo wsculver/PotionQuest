@@ -32,6 +32,22 @@ if (global.bridge_travel && room == rm_main) {
 		x = global.bridge_desert_loc_x;
 		y = global.bridge_desert_loc_y;
 	}
+} else if (global.minigame_done) {
+	if (room == rm_tundra) {
+		x = global.vault_tundra_loc_x;
+		y = global.vault_tundra_loc_y;
+	} else if (room == rm_forest) {
+		x = global.vault_forest_loc_x;
+		y = global.vault_forest_loc_y;
+	} else if (room == rm_ocean) {
+		x = global.vault_ocean_loc_x;
+		y = global.vault_ocean_loc_y;	
+	} else if (room == rm_desert) {
+		x = global.vault_desert_loc_x;
+		y = global.vault_desert_loc_y;
+	}
+	
+	global.minigame_done = false;
 } else {
 	loadSave(true);
 }

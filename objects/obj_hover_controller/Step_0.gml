@@ -10,6 +10,7 @@ if (state != hover_states.playing) {
 		}
 		
 		// Return to previous room
-		room_goto_previous();
+		global.minigame_done = true;
+		room_goto(rm_desert);
 	}
 }

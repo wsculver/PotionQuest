@@ -11,6 +11,7 @@ if(player_in_zone && keyboard_check_released(vk_space) && global.game_state == s
 	obj_riddle.riddle = riddle;
 	obj_riddle.answer = answer;
 	obj_riddle.minigame_room = minigame_room;
+	obj_riddle.minigame_rules = minigame_rules;
 	obj_riddle.riddle_state = status.locked;
 	// Create the textbox object
 	var textbox_x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0]) / 2 + 60;

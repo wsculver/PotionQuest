@@ -6,3 +6,4 @@ riddle = "";
 answer = "";
 
 minigame_room = noone;
+minigame_rules = "";

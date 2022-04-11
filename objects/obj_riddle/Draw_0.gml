@@ -39,7 +39,11 @@ if(global.game_state == states.riddle) {
 			draw_set_color(c_white);
 			draw_text_ext(x + width / 2, y + height / 2, correct_text, text_space * 1.5, width - (2 * text_border));
 		} else if(riddle_state == status.minigame_rules) {
-			
+			draw_set_font(fnt_riddle);
+			draw_set_halign(fa_center);
+			draw_set_valign(fa_top);
+			draw_set_color(c_white);
+			draw_text_ext(x + width / 2, y + text_border, minigame_rules, text_space, width - (2 * text_border));	
 		}
 	}
 } else {
