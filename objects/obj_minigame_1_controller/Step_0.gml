@@ -13,3 +13,18 @@ if (instance_number(obj_balloon) == 0) {
 		}
 	}
 }
+
+if (state != mg_1_states.playing) {
+	if (keyboard_check_pressed(vk_enter)) {
+		// TODO: Do win/loss stuff
+		if (state == hover_states.win) {
+			
+		} else if (state == hover_states.lose) {
+			
+		}
+		
+		// Return to previous room
+		global.minigame_done = true;
+		room_goto(rm_tundra);
+	}
+}
