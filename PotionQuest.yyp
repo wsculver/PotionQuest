@@ -83,7 +83,7 @@
     {"id":{"name":"spr_tile_home","path":"sprites/spr_tile_home/spr_tile_home.yy",},"order":4,},
     {"id":{"name":"spr_house_main","path":"sprites/spr_house_main/spr_house_main.yy",},"order":2,},
     {"id":{"name":"spr_npc_alchemist","path":"sprites/spr_npc_alchemist/spr_npc_alchemist.yy",},"order":32,},
-	{"id":{"name":"spr_dart","path":"sprites/spr_dart/spr_dart.yy",},"order":27,},
+    {"id":{"name":"spr_dart","path":"sprites/spr_dart/spr_dart.yy",},"order":27,},
     {"id":{"name":"spr_border","path":"sprites/spr_border/spr_border.yy",},"order":11,},
     {"id":{"name":"spr_tree_forest_2","path":"sprites/spr_tree_forest_2/spr_tree_forest_2.yy",},"order":25,},
     {"id":{"name":"obj_balloon","path":"objects/obj_balloon/obj_balloon.yy",},"order":27,},
@@ -132,13 +132,13 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"roomId":{"name":"rm_minigame_1_balloon","path":"rooms/rm_minigame_1_balloon/rm_minigame_1_balloon.yy",},},
     {"roomId":{"name":"rm_minigame_2_maze","path":"rooms/rm_minigame_2_maze/rm_minigame_2_maze.yy",},},
     {"roomId":{"name":"rm_minigame_3_hover","path":"rooms/rm_minigame_3_hover/rm_minigame_3_hover.yy",},},
     {"roomId":{"name":"rm_tundra","path":"rooms/rm_tundra/rm_tundra.yy",},},
     {"roomId":{"name":"rm_forest","path":"rooms/rm_forest/rm_forest.yy",},},
     {"roomId":{"name":"rm_ocean","path":"rooms/rm_ocean/rm_ocean.yy",},},
     {"roomId":{"name":"rm_desert","path":"rooms/rm_desert/rm_desert.yy",},},
-    {"roomId":{"name":"rm_minigame_1_balloon","path":"rooms/rm_minigame_1_balloon/rm_minigame_1_balloon.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
