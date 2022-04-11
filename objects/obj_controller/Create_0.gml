@@ -27,6 +27,7 @@ global.can_show_npc_textbox = true;
 global.in_minigame = false;
 
 global.game_load_pos_done = false;
+global.load_save = false;
 
 global.bridge_tundra_loc_x = 7424;
 global.bridge_tundra_loc_y = 4160;

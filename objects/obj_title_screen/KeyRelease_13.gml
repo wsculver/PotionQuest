@@ -1,4 +1,6 @@
 /// @description Start game
 global.game_state = states.playing;
 room_goto_next();
-loadSave(false);
+if (global.load_save) {
+	loadSave(false);
+}
