@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 angle = 90.0;
-spd = 5;
+spd = 7;
 
 launched = false;
 
