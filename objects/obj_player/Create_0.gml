@@ -9,8 +9,6 @@ enum facing {
 
 spd = 10;
 
-image_speed = 0.25;
-
 walking = false;
 direction_facing = facing.down;
 

@@ -25,9 +25,18 @@ if(global.game_state == states.paused) {
 			        sprite_delete(global.screen_shot);
 			    }
 				instance_activate_all();
+				loadSave(true);
+				break;
+			// How to play
+			case 1:
+				updateSave();
+				global.game_state = states.title;
+				global.how_to_play_return_room = room;
+				global.game_load_pos_done = false;
+				room_goto(rm_how_to_play);
 				break;
 			// Quit
-			case 1:
+			case 2:
 				updateSave();
 				alarm[0] = room_speed * 2;
 				break;

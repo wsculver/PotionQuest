@@ -3,5 +3,3 @@
 player_in_zone = false;
 
 text = noone;
-
-image_speed = 0.2;

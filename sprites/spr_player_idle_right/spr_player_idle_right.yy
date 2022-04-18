@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_player_idle_right","path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 7.5,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

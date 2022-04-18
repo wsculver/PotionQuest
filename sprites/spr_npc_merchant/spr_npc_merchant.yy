@@ -41,7 +41,7 @@
     "spriteId": {"name":"spr_npc_merchant","path":"sprites/spr_npc_merchant/spr_npc_merchant.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

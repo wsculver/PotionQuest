@@ -11,7 +11,8 @@ op_space = 32;
 pos = 0;
 
 option[0] = "Resume";
-option[1] = "Quit";
+option[1] = "How To Play";
+option[2] = "Quit";
 
 op_length = array_length(option);
 

@@ -68,3 +68,5 @@ pausedDay = alarm[0];
 pausedGame = alarm[1];
 global.dayTime = alarm[0];
 global.gameTime = alarm[1];
+
+global.how_to_play_return_room = rm_title;
