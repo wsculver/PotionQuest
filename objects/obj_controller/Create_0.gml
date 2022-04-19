@@ -46,17 +46,17 @@ global.bridge_travel = false;
 
 global.minigame_done = false;
 
-global.vault_tundra_loc_x = 6816;
-global.vault_tundra_loc_y = 4160;
+global.vault_tundra_loc_x = 1650;
+global.vault_tundra_loc_y = 1650;
 
 global.vault_forest_loc_x = 3968;
 global.vault_forest_loc_y = 1216;
 
-global.vault_ocean_loc_x = 3936;
-global.vault_ocean_loc_y = 6656;
+global.vault_ocean_loc_x = 6304;
+global.vault_ocean_loc_y = 5440;
 
-global.vault_desert_loc_x = 1280;
-global.vault_desert_loc_y = 4160;
+global.vault_desert_loc_x = 3800;
+global.vault_desert_loc_y = 1408;
 
 global.day = 1;
 showDayOverlay = false;

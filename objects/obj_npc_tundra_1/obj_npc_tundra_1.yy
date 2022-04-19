@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_npc_blacksmith",
-    "path": "sprites/spr_npc_blacksmith/spr_npc_blacksmith.yy",
+    "name": "spr_npc_bartender",
+    "path": "sprites/spr_npc_bartender/spr_npc_bartender.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_npc_home_1",
+  "name": "obj_npc_tundra_1",
   "tags": [],
   "resourceType": "GMObject",
 }

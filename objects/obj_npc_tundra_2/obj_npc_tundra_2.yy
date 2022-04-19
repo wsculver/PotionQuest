@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_npc_farmer",
-    "path": "sprites/spr_npc_farmer/spr_npc_farmer.yy",
+    "name": "spr_npc_barmaid",
+    "path": "sprites/spr_npc_barmaid/spr_npc_barmaid.yy",
   },
   "solid": false,
   "visible": true,
@@ -33,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_npc_home_2",
+  "name": "obj_npc_tundra_2",
   "tags": [],
   "resourceType": "GMObject",
 }
