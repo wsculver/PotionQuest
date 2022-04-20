@@ -6,7 +6,8 @@ enum states {
 	paused,
 	inventory,
 	riddle,
-	gameover
+	gameover,
+	playing_mg_4
 }
 
 enum biome {
