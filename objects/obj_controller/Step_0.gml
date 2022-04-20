@@ -72,4 +72,7 @@ if(keyboard_check_pressed(ord("1"))) {
 	room_goto(rm_minigame_3_hover);
 } else if(keyboard_check_pressed(ord("8"))) {
 	room_goto(rm_minigame_1_balloon);
+} else if(keyboard_check_pressed(ord("9"))) {
+	room_goto(rm_minigame_4_platform);
+	global.game_state = states.playing_mg_4;
 }
