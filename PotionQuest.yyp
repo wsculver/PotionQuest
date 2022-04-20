@@ -101,6 +101,7 @@
     {"id":{"name":"spr_tree_forest_2","path":"sprites/spr_tree_forest_2/spr_tree_forest_2.yy",},"order":25,},
     {"id":{"name":"obj_balloon","path":"objects/obj_balloon/obj_balloon.yy",},"order":27,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
+    {"id":{"name":"obj_maze_controller","path":"objects/obj_maze_controller/obj_maze_controller.yy",},"order":40,},
     {"id":{"name":"obj_maze_goal","path":"objects/obj_maze_goal/obj_maze_goal.yy",},"order":13,},
     {"id":{"name":"spr_tile_forest","path":"sprites/spr_tile_forest/spr_tile_forest.yy",},"order":21,},
     {"id":{"name":"spr_npc_kid","path":"sprites/spr_npc_kid/spr_npc_kid.yy",},"order":34,},

@@ -20,7 +20,15 @@ if (state != mg_1_states.playing) {
 		if (state == hover_states.win) {
 			
 		} else if (state == hover_states.lose) {
-			
+			// Decrease game time as punishment
+			if (obj_controller.alarm[0] <= global.minigame_punishment) {
+				global.day += 1;
+				remaining_time = ((global.minigame_punishment) - obj_controller.alarm[0]);
+				obj_controller.alarm[0] = (room_speed * 3600) - remaining_time;
+			} else {
+				obj_controller.alarm[0] -= global.minigame_punishment;
+			}
+			obj_controller.alarm[1] -= (global.minigame_punishment);
 		}
 		
 		// Return to previous room

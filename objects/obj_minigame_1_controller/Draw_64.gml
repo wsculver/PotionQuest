@@ -15,6 +15,8 @@ if (state != mg_1_states.playing) {
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 		draw_text(cam_w / 2,  cam_h / 2, "YOU WIN!");
+		draw_set_font(fnt_menu);
+		draw_text(cam_w / 2, cam_h / 2 + 80, "Press Enter To Continue");
 	} else if (state == mg_1_states.lose) {
 		// Show lose message
 		draw_set_font(fnt_gameover);
@@ -22,10 +24,7 @@ if (state != mg_1_states.playing) {
 		draw_set_halign(fa_center);
 		draw_set_valign(fa_middle);
 		draw_text(cam_w / 2,  cam_h / 2, "YOU LOSE");
+		draw_set_font(fnt_menu);
+		draw_text(cam_w / 2, cam_h / 2 + 80, "You have been deducted time for failing this minigame.\nYou will need to retry this minigame to obtain the ingredient.\nPress Enter To Continue");
 	}
-
-	draw_set_font(fnt_menu);
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
-	draw_text(cam_w / 2, cam_h / 2 + 80, "Press Enter To Continue");
 }

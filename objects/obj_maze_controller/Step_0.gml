@@ -1,11 +1,13 @@
-/// @description Check if enter pressed at the end of the minigame
+/// @description 
 
-if (state != hover_states.playing) {
+if (state != maze_states.playing) {
+	alarm[0] = time_left;
+	
 	if (keyboard_check_pressed(vk_enter)) {
 		// TODO: Do win/loss stuff
-		if (state == hover_states.win) {
+		if (state == maze_states.win) {
 			
-		} else if (state == hover_states.lose) {
+		} else if (state == maze_states.lose) {
 			// Decrease game time as punishment
 			if (obj_controller.alarm[0] <= global.minigame_punishment) {
 				global.day += 1;
@@ -19,6 +21,10 @@ if (state != hover_states.playing) {
 		
 		// Return to previous room
 		global.minigame_done = true;
-		room_goto(rm_desert);
+		room_goto(rm_forest);
 	}
+	
+	instance_deactivate_object(obj_player);
+} else {
+	time_left = alarm[0];
 }
