@@ -66,4 +66,4 @@ mg_4_climbing = false;
 mg_4_force_jump = false;
 mg_4_jspd_bounce = 0;
 
-mg_4_frenzy = false;
+mg_4_can_dbl_jmp = false;

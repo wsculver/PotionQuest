@@ -1,6 +1,6 @@
 /// @description Earn a point and destroy cherry
 
-mg_4_frenzy = true;
+mg_4_can_dbl_jmp = true;
 alarm[0] = room_speed * 5;
 //audio_play_sound(snd_cherry, 1, false);
 instance_destroy(other.id);
