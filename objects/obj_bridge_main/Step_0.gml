@@ -13,4 +13,5 @@ if(player_in_zone && keyboard_check_pressed(vk_enter)) {
 	}
 	room_goto(rm_main);
 	global.bridge_travel = true;
+	audio_play_sound(snd_room_change, 1, false);
 }

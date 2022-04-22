@@ -2,6 +2,7 @@
 
 // Destroy the bullet
 instance_destroy(other);
+audio_play_sound(snd_pop, 1, false);
 
 remaining_hits--;
 

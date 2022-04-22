@@ -7,6 +7,7 @@ if(global.game_state == states.riddle && keyboard_check_pressed(vk_enter)) {
 				if(string_lower(textbox_object.text) == answer) {
 					riddle_state = status.unlocked;
 				} else {
+					audio_play_sound(snd_fail, 1, false);
 					// Decrease game time as punishment
 					if (obj_controller.alarm[0] <= global.riddle_punishment) {
 						global.day += 1;

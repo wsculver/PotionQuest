@@ -13,6 +13,7 @@ if (!launched) {
 
 // Add code to launch dart
 if (!launched && keyboard_check_pressed(vk_space)) {
+	audio_play_sound(snd_dart_throw, 1, false);
 	launched = true;
 	// Maybe need to increase the speed since this won't compound like A2
 	motion_add(image_angle, spd);

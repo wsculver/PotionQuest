@@ -10,6 +10,6 @@ var cam_h = camera_get_view_height(cam);
 if ((x > cam_x && x < (cam_x + cam_w) && y > cam_y && y < (cam_y + cam_h))) {
 	// Not sure if I want the below effect to happen, may look at doing animation instead.
 	effect_create_above(ef_smoke, x, y, 1, c_dkgray);
-	// TODO: Add popping sound effect
+	audio_play_sound(snd_pop, 1, false);
 	instance_destroy();
 }

@@ -7,7 +7,11 @@ if(global.game_state == states.paused) {
 	enter_key = keyboard_check_pressed(vk_enter);
 
 	// Move through the menu
-	pos += down_key - up_key;
+	change = down_key - up_key;
+	if (change != 0) {
+		audio_play_sound(snd_menu, 1, false);	
+	}
+	pos += change;
 	if(pos >= op_length) {
 		pos = 0;
 	}
@@ -17,6 +21,7 @@ if(global.game_state == states.paused) {
 
 	// Select option
 	if(enter_key) {
+		audio_play_sound(snd_menu, 1, false);
 		switch(pos) {
 			// Resume
 			case 0:

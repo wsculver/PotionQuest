@@ -8,6 +8,7 @@ if (global.game_state == states.paused || global.game_state == states.title) {
 if(keyboard_check_pressed(vk_escape)) {
 	// Pause
 	if(global.game_state == states.playing) {
+		audio_play_sound(snd_menu, 1, false);
 		global.game_state = states.paused;
 		pausedDay = alarm[0];
 		pausedGame = alarm[1];

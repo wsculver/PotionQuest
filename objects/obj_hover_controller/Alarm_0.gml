@@ -12,5 +12,7 @@ if (state = hover_states.playing) {
 	bullet.x_dir = x_dir;
 	bullet.y_dir = y_dir;
 
+	audio_play_sound(snd_laser_shoot, 1, false);
+
 	alarm[0] = room_speed * spawn_seconds;
 }
