@@ -9,5 +9,5 @@ if (can_score) {
 	image_xscale = 0.5;
 	move_towards_point(x, y-1, 10);
 	alarm[0] = room_speed * 0.25;
-	audio_play_sound(snd_coin, 1, false);
+	//audio_play_sound(snd_coin, 1, false);
 }
