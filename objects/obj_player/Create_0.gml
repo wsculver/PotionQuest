@@ -15,19 +15,19 @@ direction_facing = facing.down;
 if (global.bridge_travel && room == rm_main) {
 	if (global.prevRoom == biome.tundra) {
 		// right
-		x = global.bridge_tundra_loc_x;
+		x = global.bridge_tundra_loc_x - 10;
 		y = global.bridge_tundra_loc_y;
 	} else if (global.prevRoom == biome.forest) {
 		// top
 		x = global.bridge_forest_loc_x;
-		y = global.bridge_forest_loc_y;
+		y = global.bridge_forest_loc_y + 10;
 	} else if (global.prevRoom == biome.ocean) {
 		// bottom
 		x = global.bridge_ocean_loc_x;
-		y = global.bridge_ocean_loc_y;
+		y = global.bridge_ocean_loc_y - 10;
 	} else if (global.prevRoom == biome.desert) {
 		// left
-		x = global.bridge_desert_loc_x;
+		x = global.bridge_desert_loc_x + 10;
 		y = global.bridge_desert_loc_y;
 	}
 } else if (global.minigame_done) {
@@ -47,5 +47,5 @@ if (global.bridge_travel && room == rm_main) {
 	
 	global.minigame_done = false;
 } else {
-	loadSave(true);
+	loadSave(true, global.save_file_num);
 }

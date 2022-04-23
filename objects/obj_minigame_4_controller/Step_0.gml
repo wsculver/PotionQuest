@@ -9,7 +9,7 @@ if (global.mg_4_game_state != mg_4_states.playing) {
 	if (keyboard_check_pressed(vk_enter)) {
 		// TODO: Do win/loss stuff
 		if (global.mg_4_game_state == mg_4_states.win) {
-			
+			global.hasIngredient_2 = 1;
 		} else if (global.mg_4_game_state == mg_4_states.lose) {
 			// Decrease game time as punishment
 			if (obj_controller.alarm[0] <= global.minigame_punishment) {
@@ -24,6 +24,7 @@ if (global.mg_4_game_state != mg_4_states.playing) {
 		
 		// Return to previous room
 		global.minigame_done = true;
+		global.in_minigame = false;
 		global.game_state = states.playing;
 		room_goto(rm_ocean);
 	}

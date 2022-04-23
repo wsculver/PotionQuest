@@ -16,7 +16,7 @@ if (state != mg_1_states.playing) {
 	if (keyboard_check_pressed(vk_enter)) {
 		// TODO: Do win/loss stuff
 		if (state == hover_states.win) {
-			
+			global.hasIngredient_1 = 1;
 		} else if (state == hover_states.lose) {
 			// Decrease game time as punishment
 			if (obj_controller.alarm[0] <= global.minigame_punishment) {
@@ -31,6 +31,7 @@ if (state != mg_1_states.playing) {
 		
 		// Return to previous room
 		global.minigame_done = true;
+		global.in_minigame = false;
 		room_goto(rm_tundra);
 	}
 }

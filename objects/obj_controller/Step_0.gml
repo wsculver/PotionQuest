@@ -53,7 +53,7 @@ if(!global.in_minigame) {
 }
 
 if(keyboard_check_pressed(ord("P"))) {
-	updateSave();
+	updateSave(global.save_file_num);
 }
 
 if(keyboard_check_pressed(ord("1"))) {

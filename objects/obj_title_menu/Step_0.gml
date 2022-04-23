@@ -40,14 +40,29 @@ if(global.game_state == states.title) {
 			switch(pos) {
 				// Save 1
 				case 0:
-				// Save 2
-				case 1:
-				// Save 3
-				case 2:
+					global.save_file_num = 1;
 					global.game_state = states.playing;
 					room_goto(rm_main);
 					if (global.load_save) {
-						loadSave(false);
+						loadSave(false, global.save_file_num);
+					}
+					break;
+				// Save 2
+				case 1:
+					global.save_file_num = 2;
+					global.game_state = states.playing;
+					room_goto(rm_main);
+					if (global.load_save) {
+						loadSave(false, global.save_file_num);
+					}
+					break;
+				// Save 3
+				case 2:
+					global.save_file_num = 3;
+					global.game_state = states.playing;
+					room_goto(rm_main);
+					if (global.load_save) {
+						loadSave(false, global.save_file_num);
 					}
 					break;
 				// Back

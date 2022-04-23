@@ -59,6 +59,13 @@ global.vault_ocean_loc_y = 5440;
 global.vault_desert_loc_x = 3800;
 global.vault_desert_loc_y = 1408;
 
+global.save_file_num = 1;
+
+global.hasIngredient_1 = 0;
+global.hasIngredient_2 = 0;
+global.hasIngredient_3 = 0;
+global.hasIngredient_4 = 0;
+
 global.day = 1;
 showDayOverlay = false;
 // Set day timer - 1 hour
