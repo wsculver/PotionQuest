@@ -35,6 +35,7 @@
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":5,},
     {"id":{"name":"spr_back_arrow","path":"sprites/spr_back_arrow/spr_back_arrow.yy",},"order":46,},
     {"id":{"name":"obj_vault","path":"objects/obj_vault/obj_vault.yy",},"order":20,},
+    {"id":{"name":"obj_player_mg_4","path":"objects/obj_player_mg_4/obj_player_mg_4.yy",},"order":45,},
     {"id":{"name":"obj_hover_mouse_highlight","path":"objects/obj_hover_mouse_highlight/obj_hover_mouse_highlight.yy",},"order":17,},
     {"id":{"name":"spr_player_idle_down","path":"sprites/spr_player_idle_down/spr_player_idle_down.yy",},"order":33,},
     {"id":{"name":"obj_vault_forest","path":"objects/obj_vault_forest/obj_vault_forest.yy",},"order":23,},
