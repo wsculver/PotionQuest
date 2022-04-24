@@ -1,7 +1,7 @@
 /// @description
 
-zone_x = 32;
-zone_y = 32;
+zone_x = 64;
+zone_y = 64;
 
 player_in_zone = false;
 

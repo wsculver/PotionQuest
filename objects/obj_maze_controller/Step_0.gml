@@ -4,7 +4,7 @@ if (state != maze_states.playing) {
 	alarm[0] = time_left;
 	
 	if (keyboard_check_pressed(vk_enter)) {
-		// TODO: Do win/loss stuff
+		// Do win/loss stuff
 		if (state == maze_states.win) {
 			global.hasIngredient_4 = 1;
 		} else if (state == maze_states.lose) {
@@ -16,7 +16,12 @@ if (state != maze_states.playing) {
 			} else {
 				obj_controller.alarm[0] -= global.minigame_punishment;
 			}
-			obj_controller.alarm[1] -= (global.minigame_punishment);
+			
+			if (obj_controller.alarm[1] <= global.minigame_punishment) {
+				obj_controller.alarm[1] = room_speed * 1;	
+			} else {
+				obj_controller.alarm[1] -= (global.minigame_punishment);
+			}
 		}
 		
 		// Return to previous room

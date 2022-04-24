@@ -5,6 +5,8 @@ draw_set_color(c_black);
 draw_rectangle(0, 0, room_width, 40, false);
 draw_set_color(c_white);
 draw_set_font(fnt_mesg);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 draw_text(20, 10, "Score: " + string(score));
 draw_text(cam_w - 100, 10, "Lives: " + string(global.mg_4_lives));
 

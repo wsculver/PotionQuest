@@ -7,7 +7,7 @@ if (global.mg_4_game_state == mg_4_states.dead) {
 
 if (global.mg_4_game_state != mg_4_states.playing) {
 	if (keyboard_check_pressed(vk_enter)) {
-		// TODO: Do win/loss stuff
+		// Do win/loss stuff
 		if (global.mg_4_game_state == mg_4_states.win) {
 			global.hasIngredient_2 = 1;
 		} else if (global.mg_4_game_state == mg_4_states.lose) {
@@ -19,7 +19,12 @@ if (global.mg_4_game_state != mg_4_states.playing) {
 			} else {
 				obj_controller.alarm[0] -= global.minigame_punishment;
 			}
-			obj_controller.alarm[1] -= (global.minigame_punishment);
+			
+			if (obj_controller.alarm[1] <= global.minigame_punishment) {
+				obj_controller.alarm[1] = room_speed * 1;	
+			} else {
+				obj_controller.alarm[1] -= (global.minigame_punishment);
+			}
 		}
 		
 		// Return to previous room

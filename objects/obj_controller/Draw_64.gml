@@ -14,6 +14,8 @@ if (global.game_state == states.playing || global.game_state == states.paused) {
 	if (showDayOverlay) {
 		draw_set_font(fnt_menu);
 		draw_set_color(c_navy);
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
 		draw_text(centX, centY, "Day " + string(global.day));
 	}
 	
@@ -24,6 +26,8 @@ if (global.game_state == states.playing || global.game_state == states.paused) {
 	//gameMin = int64(alarm[1] / (60 * room_speed));
 	//gameSec = int64((alarm[1] % (60.0 * room_speed)) / 60);
 	draw_set_color(c_black);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 	draw_text(cam_w - 100, 10, "Day " + string(global.day));
 	draw_text(cam_w - 250, 40, "Time Remaining Today: " + string(minutes) + ":" + string(seconds));
 	//draw_text(cam_w - 250, 70, "Game Time Remaining: " + string(gameMin) + ":" + string(gameSec));

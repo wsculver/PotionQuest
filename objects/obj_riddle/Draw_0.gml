@@ -25,14 +25,14 @@ if(global.game_state == states.riddle) {
 		}
 		
 		if(riddle_state == status.incorrect) {
-			var incorrect_text = "Incorrect!\nYou have been deducted time for a wrong answer. Look around the island for hints and try again.\nPress enter to continue.";
+			var incorrect_text = "Incorrect!\nYou have been deducted time for a wrong answer. Look around the island for hints and try again.\nPress Enter to continue.";
 			draw_set_font(fnt_riddle_incorrect);
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);
 			draw_set_color(c_white);
 			draw_text_ext(x + width / 2, y + height / 2, incorrect_text, text_space * 1.5, width - (2 * text_border));
 		} else if(riddle_state == status.unlocked) {
-			var correct_text = "Correct!\nYou have unlocked the vault and will now have to pass a minigame to obtain an ingredient.\nPress enter to continue.";
+			var correct_text = "Correct!\nYou have unlocked the vault and will now have to pass a minigame to obtain an ingredient.\nPress Enter to continue.";
 			draw_set_font(fnt_riddle_incorrect);
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);

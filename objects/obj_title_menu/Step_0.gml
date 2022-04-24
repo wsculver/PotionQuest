@@ -41,7 +41,7 @@ if(global.game_state == states.title) {
 					break;
 			}
 		} else if(menu_number == 1) {
-			// TODO: load save number
+			// Load save number
 			switch(pos) {
 				// Save 1
 				case 0:

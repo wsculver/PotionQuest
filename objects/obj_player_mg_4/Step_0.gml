@@ -32,7 +32,7 @@ if (global.game_state = states.playing_mg_4) {
 		mg_4_grounded = false;
 		sprite_index = spr_player_idle_down;
 		mg_4_has_dbl_jmp = false;
-		//audio_play_sound(snd_jump, 1, false);
+		audio_play_sound(snd_jump, 1, false);
 	}
 	
 	if (!mg_4_grounded && jumping && mg_4_can_dbl_jmp && !mg_4_has_dbl_jmp) {
@@ -41,7 +41,7 @@ if (global.game_state = states.playing_mg_4) {
 		mg_4_jspd_bounce = 0;
 		mg_4_grounded = false;
 		sprite_index = spr_player_idle_down;
-		//audio_play_sound(snd_jump, 1, false);
+		audio_play_sound(snd_jump, 1, false);
 	}
 
 	//Climbing
@@ -89,7 +89,7 @@ if (global.game_state = states.playing_mg_4) {
 
 	if (y > room_height) {
 		global.mg_4_game_state = mg_4_states.dead;
-		//audio_play_sound(snd_damage, 1, false);
+		audio_play_sound(snd_pop, 1, false);
 		instance_destroy();
 	}
 	

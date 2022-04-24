@@ -33,6 +33,8 @@ if (global.bridge_travel && room == rm_main) {
 		x = global.house_main_loc_x;
 		y = global.house_main_loc_y;
 	}
+	
+	global.bridge_travel = false;
 } else if (global.minigame_done) {
 	if (room == rm_tundra) {
 		x = global.vault_tundra_loc_x;

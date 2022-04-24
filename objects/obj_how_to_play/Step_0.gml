@@ -2,7 +2,8 @@
 
 if(keyboard_check_pressed(vk_escape)) {
 	if(global.how_to_play_return_room != rm_title) {
-		global.game_state = states.paused;	
+		audio_play_sound(snd_menu, 1, false);
+		global.game_state = states.paused;
 	}
 	room_goto(global.how_to_play_return_room);	
 }
