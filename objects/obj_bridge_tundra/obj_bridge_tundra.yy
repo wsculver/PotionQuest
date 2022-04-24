@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_border",
-    "path": "sprites/spr_border/spr_border.yy",
+    "name": "spr_bridge",
+    "path": "sprites/spr_bridge/spr_bridge.yy",
   },
   "solid": false,
   "visible": true,

@@ -29,6 +29,9 @@ if (global.bridge_travel && room == rm_main) {
 		// left
 		x = global.bridge_desert_loc_x + 10;
 		y = global.bridge_desert_loc_y;
+	} else if (global.prevRoom == rm_house) {
+		x = global.house_main_loc_x;
+		y = global.house_main_loc_y;
 	}
 } else if (global.minigame_done) {
 	if (room == rm_tundra) {

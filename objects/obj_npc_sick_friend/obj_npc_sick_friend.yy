@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_bridge",
-    "path": "sprites/spr_bridge/spr_bridge.yy",
+    "name": "spr_npc_kid",
+    "path": "sprites/spr_npc_kid/spr_npc_kid.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_bridge",
-    "path": "objects/obj_bridge/obj_bridge.yy",
+    "name": "obj_npc",
+    "path": "objects/obj_npc/obj_npc.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,7 +24,6 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
@@ -34,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_bridge_ocean",
+  "name": "obj_npc_sick_friend",
   "tags": [],
   "resourceType": "GMObject",
 }

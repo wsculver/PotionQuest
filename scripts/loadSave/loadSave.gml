@@ -46,6 +46,7 @@ function loadSave(playerLoad, saveNum){
 			if (global.hasIngredient_4 == undefined) {
 				global.hasIngredient_4 = 0;
 			}
+			global.witch_inter_done = ini_read_real("interactions", "witch_inter_done", 0);
 		}
 	
 		if (playerLoad && !global.game_load_pos_done) {

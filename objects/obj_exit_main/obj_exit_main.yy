@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bridge",
-    "path": "sprites/spr_bridge/spr_bridge.yy",
+    "name": "spr_border",
+    "path": "sprites/spr_border/spr_border.yy",
   },
   "solid": false,
   "visible": true,
@@ -34,7 +34,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_bridge_ocean",
+  "name": "obj_exit_main",
   "tags": [],
   "resourceType": "GMObject",
 }

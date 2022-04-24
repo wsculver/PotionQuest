@@ -52,6 +52,33 @@ if(!global.in_minigame) {
 	}
 }
 
+if (global.game_state == states.gameover) {
+	/*var cam = view_camera[0];
+	var cam_w = camera_get_view_width(cam);
+	var cam_h = camera_get_view_height(cam);
+	if (global.wonGame) {
+		draw_set_font(fnt_gameover);
+		draw_set_color(c_green);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		draw_text(cam_w / 2, cam_h / 2 - 80, "YOU WIN!");
+		draw_set_font(fnt_menu);
+		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game");
+	} else {
+		draw_set_font(fnt_gameover);
+		draw_set_color(c_red);
+		draw_set_halign(fa_center);
+		draw_set_valign(fa_middle);
+		draw_text(cam_w / 2, cam_h / 2 - 80, "YOU LOSE!");
+		draw_set_font(fnt_menu);
+		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game");
+	}*/
+	
+	if (keyboard_check(vk_enter)) {
+		game_end();
+	}
+}
+
 if(keyboard_check_pressed(ord("P"))) {
 	updateSave(global.save_file_num);
 }

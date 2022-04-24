@@ -3,6 +3,11 @@
 if(global.game_state == states.playing) {
 	// Player movement
 	// Left arrow or A key
+	if (room == rm_house) {
+		spd = 5;
+	} else {
+		spd = 10;
+	}
 	if((keyboard_check(vk_left) || keyboard_check(ord("A"))) && !place_meeting(x - spd, y, obj_obstacle)) {
 		x -= spd;
 		direction_facing = facing.left;
@@ -36,10 +41,12 @@ if(global.game_state == states.playing) {
 	}
 
 	// Center the camera
-	half_cam_width = camera_get_view_width(view_camera[0]) / 2;
-	half_cam_height = camera_get_view_height(view_camera[0]) / 2;
-
-	camera_set_view_pos(view_camera[0], x - half_cam_width, y - half_cam_height);
+	if (room != rm_house) {
+		half_cam_width = camera_get_view_width(view_camera[0]) / 2;
+		half_cam_height = camera_get_view_height(view_camera[0]) / 2;
+		
+		camera_set_view_pos(view_camera[0], x - half_cam_width, y - half_cam_height);
+	}
 } else {
 	walking = false;
 }

@@ -42,6 +42,9 @@ global.bridge_ocean_loc_y = 7584;
 global.bridge_desert_loc_x = 512;
 global.bridge_desert_loc_y = 4160;
 
+global.house_main_loc_x = 3264;
+global.house_main_loc_y = 5792;
+
 global.prevRoom = rm_main;
 global.bridge_travel = false;
 
@@ -65,6 +68,11 @@ global.hasIngredient_1 = 0;
 global.hasIngredient_2 = 0;
 global.hasIngredient_3 = 0;
 global.hasIngredient_4 = 0;
+
+global.wonGame = false;
+
+global.witch_interaction = false;
+global.witch_inter_done = false;
 
 global.day = 1;
 showDayOverlay = false;
