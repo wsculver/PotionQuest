@@ -10,5 +10,5 @@ y = global.vault_ocean_loc_y;
 riddle = "If you throw a red stone into the blue sea what it will become?";
 answer = "wet";
 
-minigame_room = rm_minigame_1_balloon; 
-minigame_rules = "This will be the platformer minigame in the future. Right now this takes you to the balloon minigame.\nPress Enter to continue."
+minigame_room = rm_minigame_4_platform; 
+minigame_rules = "Collect all 20 coins to collect the star.\nAvoid the octopi or jump on their heads to kill them.\nGrab a cherry to get a super jump for 5 seconds.\nPress Enter to continue."

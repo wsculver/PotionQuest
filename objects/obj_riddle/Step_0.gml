@@ -30,6 +30,9 @@ if(global.game_state == states.riddle && keyboard_check_pressed(vk_enter)) {
 	} else if(riddle_state == status.minigame_rules) {
 		global.game_state = states.playing;
 		global.in_minigame = true;
+		if (minigame_room == rm_minigame_4_platform) {
+			global.game_state = states.playing_mg_4;
+		}
 		room_goto(minigame_room);
 	}
 }

@@ -10,4 +10,17 @@ if(global.game_state == states.inventory) {
 
 	// Draw menu background
 	draw_sprite_ext(sprite_index, image_index, x, y, width / sprite_width, height / sprite_height, 0, c_white, 1);
+	if (global.hasIngredient_1 == 1) {
+		draw_sprite(spr_ingredient_1, 0, x + 66, y + 66);
+	}
+	if (global.hasIngredient_2 == 1) {
+		draw_sprite(spr_ingredient_2, 0, x + (129*1) + 66, y + 66);
+	}
+	if (global.hasIngredient_3 == 1) {
+		draw_sprite(spr_ingredient_3, 0, x + (129*2) + 66, y + 66);
+	}
+	if (global.hasIngredient_4 == 1) {
+		draw_sprite(spr_ingredient_4, 0, x + (129*3) + 66, y + 66);
+	}
+	
 }

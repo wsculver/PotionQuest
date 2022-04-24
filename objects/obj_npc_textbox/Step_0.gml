@@ -16,6 +16,10 @@ if(global.show_npc_textbox) {
 				current_page = 0;
 				can_switch_page = false;
 				alarm[0] = room_speed * 0.1;
+				if (global.witch_interaction) {
+					global.witch_interaction = false;
+					global.witch_inter_done = true;
+				}
 			}
 		}
 	}

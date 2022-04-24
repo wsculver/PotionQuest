@@ -42,6 +42,9 @@ global.bridge_ocean_loc_y = 7584;
 global.bridge_desert_loc_x = 512;
 global.bridge_desert_loc_y = 4160;
 
+global.house_main_loc_x = 3264;
+global.house_main_loc_y = 5792;
+
 global.prevRoom = rm_main;
 global.bridge_travel = false;
 
@@ -59,6 +62,18 @@ global.vault_ocean_loc_y = 5440;
 global.vault_desert_loc_x = 3800;
 global.vault_desert_loc_y = 1408;
 
+global.save_file_num = 1;
+
+global.hasIngredient_1 = 0;
+global.hasIngredient_2 = 0;
+global.hasIngredient_3 = 0;
+global.hasIngredient_4 = 0;
+
+global.wonGame = false;
+
+global.witch_interaction = false;
+global.witch_inter_done = false;
+
 global.day = 1;
 showDayOverlay = false;
 // Set day timer - 1 hour
@@ -74,3 +89,5 @@ global.how_to_play_return_room = rm_title;
 
 global.riddle_punishment = room_speed * 3600;
 global.minigame_punishment = room_speed * 3600;
+
+global.mg_4_lives = 3;

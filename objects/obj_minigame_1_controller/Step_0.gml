@@ -1,13 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
+
 if (state == mg_1_states.playing) {
 	if (instance_number(obj_balloon) == 0) {
 		audio_play_sound(snd_goal, 1, false);
 		state = mg_1_states.win;
 		// Code to give player ingredient
 	} else {
-		// TODO: Add code to go through all the balloons and
-		// check if they have reached the bottom of the screen
 		for (var i = 0; i < instance_number(obj_balloon); ++i) {
 			if (instance_find(obj_balloon, i).y >= room_height) {
 				audio_play_sound(snd_fail, 1, false);
@@ -22,7 +21,7 @@ if (state != mg_1_states.playing) {
 	if (keyboard_check_pressed(vk_enter)) {
 		// TODO: Do win/loss stuff
 		if (state == hover_states.win) {
-			
+			global.hasIngredient_1 = 1;
 		} else if (state == hover_states.lose) {
 			// Decrease game time as punishment
 			if (obj_controller.alarm[0] <= global.minigame_punishment) {
@@ -37,6 +36,7 @@ if (state != mg_1_states.playing) {
 		
 		// Return to previous room
 		global.minigame_done = true;
+		global.in_minigame = false;
 		room_goto(rm_tundra);
 	}
 }

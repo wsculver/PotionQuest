@@ -3,7 +3,8 @@
 enum mg_4_states {
 	playing,
 	dead,
-	gameover
+	win,
+	lose
 };
 global.mg_4_game_state = mg_4_states.playing;
 

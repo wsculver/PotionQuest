@@ -1,8 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function updateSave(){
-	// POSSIBLE EXPANSION, MULTIPLE SAVEFILES - unlikely
-	
+function updateSave(saveNum){
 	/** Save file needs:
 			Current Room
 			XY Coordinates
@@ -11,6 +9,7 @@ function updateSave(){
 	instance_activate_all();
 	player = instance_find(obj_player, 0);
 	
+	var diffPos = false;
 	currRoom = biome.main;
 	if (room == rm_tundra) {
 		currRoom = biome.tundra;
@@ -20,18 +19,33 @@ function updateSave(){
 		currRoom = biome.ocean;
 	} else if (room == rm_desert) {
 		currRoom = biome.desert;
+	} else if (room == rm_house) {
+		currRoom = biome.main;
+		diffPos = true;
 	}
 	
-	
-	// TODO: Add inventory code
-	
-	
-	ini_open("savefile.ini");
+	if (saveNum == 2) {
+		ini_open("savefile2.ini");
+	} else if (saveNum == 3) {
+		ini_open("savefile3.ini");
+	} else {
+		ini_open("savefile1.ini");
+	}
 	ini_write_real("location", "Room", currRoom );
-	ini_write_real("location", "x", player.x );
-	ini_write_real("location", "y", player.y );
+	if (diffPos) {
+		ini_write_real("location", "x", global.house_main_loc_x );
+		ini_write_real("location", "y", global.house_main_loc_y );
+	} else {
+		ini_write_real("location", "x", player.x );
+		ini_write_real("location", "y", player.y );
+	}
 	ini_write_real("gameTime", "Day", global.day);
 	ini_write_real("gameTime", "DayTime", global.dayTime);
 	ini_write_real("gameTime", "GameTime", global.gameTime);
+	ini_write_real("ingredients", "hasIngredient_1", global.hasIngredient_1);
+	ini_write_real("ingredients", "hasIngredient_2", global.hasIngredient_2);
+	ini_write_real("ingredients", "hasIngredient_3", global.hasIngredient_3);
+	ini_write_real("ingredients", "hasIngredient_4", global.hasIngredient_4);
+	ini_write_real("interactions", "witch_inter_done", global.witch_inter_done);
 	ini_close();
 }
