@@ -9,7 +9,6 @@ function updateSave(saveNum){
 	instance_activate_all();
 	player = instance_find(obj_player, 0);
 	
-	var diffPos = false;
 	currRoom = biome.main;
 	if (room == rm_tundra) {
 		currRoom = biome.tundra;
@@ -20,8 +19,7 @@ function updateSave(saveNum){
 	} else if (room == rm_desert) {
 		currRoom = biome.desert;
 	} else if (room == rm_house) {
-		currRoom = biome.main;
-		diffPos = true;
+		currRoom = biome.house;
 	}
 	
 	if (saveNum == 2) {
@@ -32,13 +30,8 @@ function updateSave(saveNum){
 		ini_open("savefile1.ini");
 	}
 	ini_write_real("location", "Room", currRoom );
-	if (diffPos) {
-		ini_write_real("location", "x", global.house_main_loc_x );
-		ini_write_real("location", "y", global.house_main_loc_y );
-	} else {
-		ini_write_real("location", "x", player.x );
-		ini_write_real("location", "y", player.y );
-	}
+	ini_write_real("location", "x", player.x );
+	ini_write_real("location", "y", player.y );
 	ini_write_real("gameTime", "Day", global.day);
 	ini_write_real("gameTime", "DayTime", global.dayTime);
 	ini_write_real("gameTime", "GameTime", global.gameTime);

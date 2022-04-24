@@ -15,7 +15,8 @@ enum biome {
 	tundra,
 	forest,
 	ocean,
-	desert
+	desert,
+	house
 }
 
 global.game_state = states.title;

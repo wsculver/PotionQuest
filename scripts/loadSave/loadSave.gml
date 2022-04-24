@@ -23,6 +23,8 @@ function loadSave(playerLoad, saveNum){
 				room_goto(rm_ocean);
 			} else if (currRoom == biome.forest) {
 				room_goto(rm_forest);
+			} else if (currRoom == biome.house) {
+				room_goto(rm_house);
 			}
 		
 			// Update game and day timers to last exit

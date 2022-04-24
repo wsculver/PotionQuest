@@ -93,8 +93,9 @@ if (global.game_state = states.playing_mg_4) {
 		instance_destroy();
 	}
 	
+	/* Minigame cheat code, useful for debugging
 	if (keyboard_check(ord("C"))) {
 		cheat_code = true;
 		instance_find(obj_star, 0).visible = true;
-	}
+	}*/
 }
