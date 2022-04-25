@@ -14,9 +14,21 @@ option[0][0] = "Play";
 option[0][1] = "How To Play";
 option[0][2] = "Quit";
 
-option[1][0] = "Save 1";
-option[1][1] = "Save 2";
-option[1][2] = "Save 3";
+if (savefileExists(1)) {
+	option[1][0] = "Save 1";
+} else {
+	option[1][0] = "Save 1 - EMPTY";
+}
+if (savefileExists(2)) {
+	option[1][1] = "Save 2";
+} else {
+	option[1][1] = "Save 2 - EMPTY";
+}
+if (savefileExists(3)) {
+	option[1][2] = "Save 3";
+} else {
+	option[1][2] = "Save 3 - EMPTY";
+}
 option[1][3] = "Back";
 
 menu_number = 0;

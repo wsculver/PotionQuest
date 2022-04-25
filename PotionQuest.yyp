@@ -48,6 +48,7 @@
     {"id":{"name":"spr_spacebar","path":"sprites/spr_spacebar/spr_spacebar.yy",},"order":8,},
     {"id":{"name":"spr_tile_ocean","path":"sprites/spr_tile_ocean/spr_tile_ocean.yy",},"order":22,},
     {"id":{"name":"fnt_paused","path":"fonts/fnt_paused/fnt_paused.yy",},"order":2,},
+    {"id":{"name":"savefileExists","path":"scripts/savefileExists/savefileExists.yy",},"order":4,},
     {"id":{"name":"snd_level_up","path":"sounds/snd_level_up/snd_level_up.yy",},"order":1,},
     {"id":{"name":"spr_hover_mouse_highlight","path":"sprites/spr_hover_mouse_highlight/spr_hover_mouse_highlight.yy",},"order":19,},
     {"id":{"name":"obj_red_block","path":"objects/obj_red_block/obj_red_block.yy",},"order":42,},
