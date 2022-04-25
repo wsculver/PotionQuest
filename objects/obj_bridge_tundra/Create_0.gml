@@ -4,3 +4,6 @@ event_inherited();
 
 x = global.bridge_tundra_loc_x;
 y = global.bridge_tundra_loc_y;
+
+
+image_angle = 270;

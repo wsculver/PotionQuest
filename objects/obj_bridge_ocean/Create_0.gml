@@ -4,3 +4,6 @@ event_inherited();
 
 x = global.bridge_ocean_loc_x;
 y = global.bridge_ocean_loc_y;
+
+
+image_angle = 180;
