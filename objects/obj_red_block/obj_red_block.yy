@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_block_red",
-    "path": "sprites/spr_block_red/spr_block_red.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
