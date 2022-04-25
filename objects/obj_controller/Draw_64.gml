@@ -41,7 +41,8 @@ if (global.game_state == states.gameover) {
 		draw_set_valign(fa_middle);
 		draw_text(cam_w / 2, cam_h / 2 - 80, "YOU WIN!");
 		draw_set_font(fnt_menu);
-		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game");
+		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game.");
+		draw_text(cam_w / 2, cam_h / 2 + 150, "Press D to erase this savefile.");
 	} else {
 		draw_set_font(fnt_gameover);
 		draw_set_color(c_red);
@@ -49,6 +50,7 @@ if (global.game_state == states.gameover) {
 		draw_set_valign(fa_middle);
 		draw_text(cam_w / 2, cam_h / 2 - 80, "YOU LOSE!");
 		draw_set_font(fnt_menu);
-		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game");
+		draw_text(cam_w / 2, cam_h / 2 + 50, "Press Enter to close the game.");
+		draw_text(cam_w / 2, cam_h / 2 + 150, "Press D to erase this savefile.");
 	}
 }

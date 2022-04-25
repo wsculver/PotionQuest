@@ -19,6 +19,10 @@ enum biome {
 	house
 }
 
+// If you need to delete a savefile, call these
+clearScript(2);
+clearScript(3);
+
 global.game_state = states.title;
 
 global.screen_shot = -1;

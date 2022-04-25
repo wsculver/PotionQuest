@@ -54,7 +54,12 @@ if(!global.in_minigame) {
 }
 
 if (global.game_state == states.gameover && keyboard_check(vk_enter)) {
-	game_end();
+	updateSave(global.save_file_num);
+	alarm[3] = room_speed * 1;
+}
+if (global.game_state == states.gameover && keyboard_check(ord("D"))) {
+	clearScript(global.save_file_num);
+	alarm[3] = room_speed * 1;
 }
 
 /* Useful code for debugging, but no longer needed
