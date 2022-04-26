@@ -6,7 +6,7 @@ zone_y = 200;
 player_in_zone = false;
 
 riddle = "";
-answer = "";
+answers = [];
 
 minigame_room = noone;
 minigame_rules = "";

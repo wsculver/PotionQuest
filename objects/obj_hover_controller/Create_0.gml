@@ -16,4 +16,4 @@ state = hover_states.playing;
 alarm[0] = room_speed * spawn_seconds;
 
 // Alarm for changing levels
-alarm[1] = room_speed * 60;
+alarm[1] = room_speed * 30;

@@ -10,5 +10,5 @@ if (state = hover_states.playing) {
 		audio_play_sound(snd_goal, 1, false);
 	}
 	
-	alarm[1] = room_speed * 60;
+	alarm[1] = room_speed * 30;
 }

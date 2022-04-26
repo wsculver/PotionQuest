@@ -18,7 +18,7 @@ text_border = 10;
 text_space = 32;
 
 riddle = "";
-answer = "";
+answers = [];
 
 minigame_room = noone;
 minigame_rules = "";

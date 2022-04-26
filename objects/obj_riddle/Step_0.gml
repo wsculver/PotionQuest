@@ -4,9 +4,16 @@ if(global.game_state == states.riddle && keyboard_check_pressed(vk_enter)) {
 	if(riddle_state == status.locked) {
 		if(instance_exists(textbox_object)) {
 			if(textbox_object.text != "") {
-				if(string_lower(textbox_object.text) == answer) {
-					riddle_state = status.unlocked;
-				} else {
+				var answer_found = false;
+				for (var i = 0; i < array_length(answers); i++) {
+					if(string_lower(textbox_object.text) == answers[i]) {
+						audio_play_sound(snd_goal, 1, false);
+						riddle_state = status.unlocked;
+						answer_found = true;
+						break;
+					}
+				}
+				if (!answer_found) {
 					audio_play_sound(snd_fail, 1, false);
 					riddle_state = status.incorrect;
 				}

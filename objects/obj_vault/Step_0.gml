@@ -9,7 +9,7 @@ if(obj_player.x > x - zone_x && obj_player.x < x + zone_x && obj_player.y > y - 
 if(player_in_zone && keyboard_check_released(vk_space) && global.game_state == states.playing) {
 	global.game_state = states.riddle;
 	obj_riddle.riddle = riddle;
-	obj_riddle.answer = answer;
+	obj_riddle.answers = answers;
 	obj_riddle.minigame_room = minigame_room;
 	obj_riddle.minigame_rules = minigame_rules;
 	obj_riddle.riddle_state = status.locked;
