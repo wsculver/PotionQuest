@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
-  "bbox_right": 1255,
-  "bbox_top": 0,
-  "bbox_bottom": 999,
+  "bbox_left": 3,
+  "bbox_right": 63,
+  "bbox_top": 16,
+  "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1256,
-  "height": 1000,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7fc2a256-2aeb-4f17-a21a-846951e32e39","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7fc2a256-2aeb-4f17-a21a-846951e32e39","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},"LayerId":{"name":"297c601b-f3df-4db2-8410-48c5255d9a6e","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tile_tundra","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},"resourceVersion":"1.0","name":"7fc2a256-2aeb-4f17-a21a-846951e32e39","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f1c89071-1e65-4b18-bb38-156a6c2eda1d","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f1c89071-1e65-4b18-bb38-156a6c2eda1d","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},"LayerId":{"name":"60a8bb29-d010-4e64-9c79-40d587b789b8","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_sandcastle","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},"resourceVersion":"1.0","name":"f1c89071-1e65-4b18-bb38-156a6c2eda1d","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tile_tundra","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},
+    "spriteId": {"name":"spr_sandcastle","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ce529b3f-42c9-4a9a-ae74-ddb497787a1f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fc2a256-2aeb-4f17-a21a-846951e32e39","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f8b1dd15-4471-4ad6-8745-fbe0d103eba0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f1c89071-1e65-4b18-bb38-156a6c2eda1d","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tile_tundra","path":"sprites/spr_tile_tundra/spr_tile_tundra.yy",},
+    "parent": {"name":"spr_sandcastle","path":"sprites/spr_sandcastle/spr_sandcastle.yy",},
     "resourceVersion": "1.4",
-    "name": "spr_tile_tundra",
+    "name": "spr_sandcastle",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"297c601b-f3df-4db2-8410-48c5255d9a6e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"60a8bb29-d010-4e64-9c79-40d587b789b8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_tile_tundra",
+  "name": "spr_sandcastle",
   "tags": [],
   "resourceType": "GMSprite",
 }

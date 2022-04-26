@@ -9,7 +9,7 @@ function loadSave(playerLoad, saveNum){
 		ini_open("savefile1.ini");
 	}
 	
-	if (savefileExists(saveNum)) {
+	if (ini_read_string("location", "Room", "") != "") {
 		// The ini file exists
 		if (!playerLoad) {
 			currRoom = ini_read_real("location", "Room", 0 );
