@@ -127,6 +127,7 @@
     {"id":{"name":"obj_platform_trampoline","path":"objects/obj_platform_trampoline/obj_platform_trampoline.yy",},"order":41,},
     {"id":{"name":"spr_rock","path":"sprites/spr_rock/spr_rock.yy",},"order":9,},
     {"id":{"name":"rm_tundra","path":"rooms/rm_tundra/rm_tundra.yy",},"order":4,},
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},"order":84,},
     {"id":{"name":"spr_cauldron","path":"sprites/spr_cauldron/spr_cauldron.yy",},"order":74,},
     {"id":{"name":"spr_enter","path":"sprites/spr_enter/spr_enter.yy",},"order":26,},
     {"id":{"name":"snd_goal","path":"sounds/snd_goal/snd_goal.yy",},"order":7,},
