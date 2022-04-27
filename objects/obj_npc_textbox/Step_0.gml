@@ -23,4 +23,22 @@ if(global.show_npc_textbox) {
 			}
 		}
 	}
+	
+	// When the player leaves the current NPC zone hide the textbox
+	if (global.current_npc_x != noone && global.current_npc_y != noone) {
+		if (!(obj_player.x > global.current_npc_x - global.current_npc_zone_x && obj_player.x < global.current_npc_x + global.current_npc_zone_x && obj_player.y > global.current_npc_y - global.current_npc_zone_y && obj_player.y < global.current_npc_y + global.current_npc_zone_y)) {
+			global.show_npc_textbox = false;
+			text = noone;
+			current_page = 0;
+			can_switch_page = false;
+			alarm[0] = room_speed * 0.1;
+			if (global.witch_interaction) {
+				global.witch_interaction = false;
+				global.witch_inter_done = true;
+			}
+		
+			global.current_npc_x = noone;
+			global.current_npc_y = noone;
+		}
+	}
 } 

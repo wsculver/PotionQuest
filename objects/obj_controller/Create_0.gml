@@ -6,8 +6,7 @@ enum states {
 	paused,
 	inventory,
 	riddle,
-	gameover,
-	playing_mg_4
+	gameover
 }
 
 enum biome {
@@ -20,7 +19,8 @@ enum biome {
 }
 
 // If you need to delete a savefile, call these
-clearScript(2);
+//clearScript(1);
+//clearScript(2);
 clearScript(3);
 
 global.game_state = states.title;
@@ -96,3 +96,8 @@ global.riddle_punishment = room_speed * 1800;
 global.minigame_punishment = room_speed * 1800;
 
 global.mg_4_lives = 3;
+
+global.current_npc_x = noone;
+global.current_npc_y = noone;
+global.current_npc_zone_x = noone;
+global.current_npc_zone_y = noone;

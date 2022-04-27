@@ -5,7 +5,7 @@ var cam_w = camera_get_view_width(cam);
 var cam_h = camera_get_view_height(cam);
 
 // Get camera properties
-if (global.game_state == states.playing || global.game_state == states.paused) {
+if ((global.game_state == states.playing || global.game_state == states.paused) && !global.in_minigame) {
 	//var cam_w = display_get_gui_width();
 	//var cam_h = display_get_gui_height();
 	centX = cam_w / 2;

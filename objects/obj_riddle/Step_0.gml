@@ -43,7 +43,7 @@ if(global.game_state == states.riddle && keyboard_check_pressed(vk_enter)) {
 		global.game_state = states.playing;
 		global.in_minigame = true;
 		if (minigame_room == rm_minigame_4_platform) {
-			global.game_state = states.playing_mg_4;
+			global.game_state = states.playing;
 		}
 		room_goto(minigame_room);
 	}

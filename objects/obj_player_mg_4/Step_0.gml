@@ -1,4 +1,4 @@
-if (global.game_state = states.playing_mg_4) {
+if (global.game_state = states.playing) {
 	/// @description Movement and collision
 
 	var keyleft = keyboard_check(vk_left) || keyboard_check(ord("A"));
