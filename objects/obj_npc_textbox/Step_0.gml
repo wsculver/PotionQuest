@@ -16,7 +16,7 @@ if(global.show_npc_textbox) {
 				current_page = 0;
 				can_switch_page = false;
 				alarm[0] = room_speed * 0.1;
-				if (global.witch_interaction) {
+				if (global.witch_interaction && room == rm_main) {
 					global.witch_interaction = false;
 					global.witch_inter_done = true;
 				}
@@ -32,10 +32,6 @@ if(global.show_npc_textbox) {
 			current_page = 0;
 			can_switch_page = false;
 			alarm[0] = room_speed * 0.1;
-			if (global.witch_interaction) {
-				global.witch_interaction = false;
-				global.witch_inter_done = true;
-			}
 		
 			global.current_npc_x = noone;
 			global.current_npc_y = noone;
