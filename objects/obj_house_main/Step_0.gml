@@ -6,7 +6,7 @@ if(obj_player.x > x - zone_x && obj_player.x < x + zone_x && obj_player.y > y - 
 	player_in_zone = false;
 }
 
-if(player_in_zone && keyboard_check_pressed(vk_enter)) {
+if(player_in_zone && keyboard_check_pressed(vk_enter) && global.game_state == states.playing) {
 	// Move to room, should be in children
 	room_goto(rm_house);
 	

@@ -34,12 +34,12 @@ if(global.game_state == states.paused) {
 				break;
 			// How to play
 			case 1:
-				updateSave(global.save_file_num);
+				updateSave(global.save_file_num, false);
 				alarm[1] = room_speed * 1;
 				break;
 			// Quit
 			case 2:
-				updateSave(global.save_file_num);
+				updateSave(global.save_file_num, true);
 				alarm[0] = room_speed * 1;
 				break;
 		}

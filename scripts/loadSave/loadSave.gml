@@ -11,6 +11,7 @@ function loadSave(playerLoad, saveNum){
 	
 	if (ini_read_string("location", "Room", "") != "") {
 		// The ini file exists
+		inMiniGame = ini_read_real("location", "inMiniGame", false);
 		if (!playerLoad) {
 			currRoom = ini_read_real("location", "Room", 0 );
 			if (currRoom == biome.main) {
@@ -51,7 +52,7 @@ function loadSave(playerLoad, saveNum){
 			global.witch_inter_done = ini_read_real("interactions", "witch_inter_done", 0);
 		}
 	
-		if (playerLoad && !global.game_load_pos_done) {
+		if (playerLoad && !global.game_load_pos_done && !inMiniGame) {
 			global.game_load_pos_done = true;
 			player = instance_find(obj_player, 0);
 			player.x = ini_read_real("location", "x", 0 );

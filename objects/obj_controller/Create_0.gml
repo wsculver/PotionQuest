@@ -21,7 +21,7 @@ enum biome {
 // If you need to delete a savefile, call these
 //clearScript(1);
 //clearScript(2);
-clearScript(3);
+//clearScript(3);
 
 global.game_state = states.title;
 
