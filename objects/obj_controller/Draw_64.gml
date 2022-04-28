@@ -5,7 +5,7 @@ var cam_w = camera_get_view_width(cam);
 var cam_h = camera_get_view_height(cam);
 
 // Get camera properties
-if ((global.game_state == states.playing || global.game_state == states.paused) && !global.in_minigame) {
+if ((global.game_state == states.playing || global.game_state == states.paused || global.game_state == states.inventory) && !global.in_minigame) {
 	//var cam_w = display_get_gui_width();
 	//var cam_h = display_get_gui_height();
 	centX = cam_w / 2;
@@ -32,8 +32,12 @@ if ((global.game_state == states.playing || global.game_state == states.paused) 
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 	draw_text(20, 10, "Day " + string(global.day) + "/7");
-	draw_text(cam_w - 230, 10, "Time Remaining Today: " + string(minutes) + ":" + string(seconds));
-	//draw_text(cam_w - 250, 70, "Game Time Remaining: " + string(gameMin) + ":" + string(gameSec));
+	if (seconds < 10) {
+		draw_text(cam_w - 230, 10, "Time Remaining Today: " + string(minutes) + ":0" + string(seconds));
+	} else {
+		draw_text(cam_w - 230, 10, "Time Remaining Today: " + string(minutes) + ":" + string(seconds));
+		//draw_text(cam_w - 250, 70, "Game Time Remaining: " + string(gameMin) + ":" + string(gameSec));
+	}
 }
 
 if (global.game_state == states.gameover) {

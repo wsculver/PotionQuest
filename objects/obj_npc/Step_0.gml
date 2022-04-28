@@ -2,10 +2,12 @@
 
 if(obj_player.x > x - zone_x && obj_player.x < x + zone_x && obj_player.y > y - zone_y && obj_player.y < y + zone_y) {
 	player_in_zone = true;
-	global.current_npc_x = x;
-	global.current_npc_y = y;
-	global.current_npc_zone_x = zone_x;
-	global.current_npc_zone_y = zone_y;
+	if (global.current_npc_x == noone && global.current_npc_y == noone) {
+		global.current_npc_x = x;
+		global.current_npc_y = y;
+		global.current_npc_zone_x = zone_x;
+		global.current_npc_zone_y = zone_y;
+	}
 } else {
 	player_in_zone = false;	
 }
