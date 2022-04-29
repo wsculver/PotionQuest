@@ -17,6 +17,9 @@ if(keyboard_check_pressed(vk_escape)) {
 		}
 		instance_deactivate_all(true);
 		instance_activate_object(obj_paused_menu);
+		if (global.in_minigame && room == rm_minigame_4_platform) {
+			instance_activate_object(obj_minigame_4_controller);
+		}
 	}
 	// Resume
 	else if(global.game_state == states.paused) {
