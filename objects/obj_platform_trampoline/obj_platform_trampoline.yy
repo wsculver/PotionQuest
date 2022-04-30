@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_platform_trampoline",
-    "path": "sprites/spr_platform_trampoline/spr_platform_trampoline.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
