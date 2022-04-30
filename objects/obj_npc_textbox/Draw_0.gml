@@ -14,4 +14,13 @@ if(global.show_npc_textbox) {
 	draw_set_valign(fa_top);
 	draw_set_color(c_white);
 	draw_text_ext(x + text_border, y + text_border, text[current_page], text_space, width - (2 * text_border));	
+	
+	// Draw arrow if there are more pages
+	if(current_page < num_pages - 1) {
+		if (show_arrows) {
+			draw_sprite_ext(spr_next_arrows, 0, x + width - 25, y + height - 20, 0.4, 0.4, 0, c_white, 1);
+		}
+	}
+	
+	
 }

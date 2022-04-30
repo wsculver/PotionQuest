@@ -22,26 +22,60 @@ if(global.game_state == states.paused) {
 	// Select option
 	if(enter_key) {
 		audio_play_sound(snd_menu, 1, false);
-		switch(pos) {
-			// Resume
-			case 0:
-				global.game_state = states.playing;
-				if(sprite_exists(global.screen_shot)){
-			        sprite_delete(global.screen_shot);
-			    }
-				instance_activate_all();
-				loadSave(true, global.save_file_num);
-				break;
-			// How to play
-			case 1:
-				updateSave(global.save_file_num, false);
-				alarm[1] = room_speed * 1;
-				break;
-			// Quit
-			case 2:
-				updateSave(global.save_file_num, true);
-				alarm[0] = room_speed * 1;
-				break;
+		if (global.in_minigame) {
+			switch(pos) {
+				// Resume
+				case 0:
+					global.game_state = states.playing;
+					if(sprite_exists(global.screen_shot)){
+				        sprite_delete(global.screen_shot);
+				    }
+					instance_activate_all();
+					loadSave(true, global.save_file_num);
+					break;
+				// Quit
+				case 1:
+					updateSave(global.save_file_num, true);
+					alarm[0] = room_speed * 1;
+					break;
+			}
+		} else {
+			switch(pos) {
+				// Resume
+				case 0:
+					global.game_state = states.playing;
+					if(sprite_exists(global.screen_shot)){
+				        sprite_delete(global.screen_shot);
+				    }
+					instance_activate_all();
+					loadSave(true, global.save_file_num);
+					break;
+				// How to play
+				case 1:
+					updateSave(global.save_file_num, false);
+					alarm[1] = room_speed * 1;
+					break;
+				// Quit
+				case 2:
+					updateSave(global.save_file_num, true);
+					alarm[0] = room_speed * 1;
+					break;
+			}
 		}
 	}
+}
+
+if (global.in_minigame) {
+	option = [];
+	option[0] = "Resume";
+	option[1] = "Quit";
+
+	op_length = array_length(option);
+} else {
+	option = [];
+	option[0] = "Resume";
+	option[1] = "How To Play";
+	option[2] = "Quit";
+
+	op_length = array_length(option);
 }

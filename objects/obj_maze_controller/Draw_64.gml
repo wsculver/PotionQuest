@@ -13,7 +13,11 @@ draw_set_font(fnt_menu);
 draw_set_color(c_red);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(cam_w / 2, 40, string(minutes) + ":" + string(seconds));
+if (seconds < 10) {
+	draw_text(cam_w / 2, 40, string(minutes) + ":0" + string(seconds));
+} else {
+	draw_text(cam_w / 2, 40, string(minutes) + ":" + string(seconds));
+}
 
 if (state != maze_states.playing) {	
 	// Draw darkened background

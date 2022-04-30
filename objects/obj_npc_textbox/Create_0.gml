@@ -16,4 +16,8 @@ current_page = 0;
 
 can_switch_page = false;
 
+show_arrows = false;
+blink_speed = room_speed * 0.75;
+alarm[1] = blink_speed;
+
 depth = -99;

@@ -21,6 +21,8 @@ if (global.game_state = states.playing) {
 		} else if (mg_4_grounded && move > 0) {
 			sprite_index = spr_player_walk_right;
 		}
+	} else if (mg_4_climbing_idle) {
+		sprite_index = spr_player_idle_up;
 	} else if (!mg_4_climbing) {
 		sprite_index = spr_player_idle_down;
 	}
@@ -51,13 +53,22 @@ if (global.game_state = states.playing) {
 		} else {
 			mg_4_climbing = false;
 		}
+		
+		if (vmove == 0) {
+			mg_4_climbing_idle = true;
+		} else {
+			mg_4_climbing_idle = false;
+		}
 	} else {
 		mg_4_climbing = false;
+		mg_4_climbing_idle = false;
 	}
 
 	if (mg_4_climbing) {
 		mg_4_vsp = vmove * mg_4_spd;
-		sprite_index = spr_player_walk_up;
+		if (!mg_4_climbing_idle) {
+			sprite_index = spr_player_walk_up;
+		}
 	}
 
 	// Horizontal collision with blocks
